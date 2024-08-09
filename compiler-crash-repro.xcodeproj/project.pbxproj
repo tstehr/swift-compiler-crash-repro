@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2260A1922C6667D900622BB0 /* SwiftRater in Frameworks */ = {isa = PBXBuildFile; productRef = 2260A1912C6667D900622BB0 /* SwiftRater */; };
 		22AA2F382C6663CD0045CF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA2F372C6663CD0045CF08 /* AppDelegate.swift */; };
 		22AA2F3A2C6663CD0045CF08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA2F392C6663CD0045CF08 /* SceneDelegate.swift */; };
 		22AA2F3C2C6663CD0045CF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA2F3B2C6663CD0045CF08 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2260A1922C6667D900622BB0 /* SwiftRater in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "compiler-crash-repro";
+			packageProductDependencies = (
+				2260A1912C6667D900622BB0 /* SwiftRater */,
+			);
 			productName = "compiler-crash-repro";
 			productReference = 22AA2F342C6663CD0045CF08 /* compiler-crash-repro.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 22AA2F2B2C6663CD0045CF08;
+			packageReferences = (
+				2260A1902C6667D900622BB0 /* XCRemoteSwiftPackageReference "SwiftRater" */,
+			);
 			productRefGroup = 22AA2F352C6663CD0045CF08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2260A1902C6667D900622BB0 /* XCRemoteSwiftPackageReference "SwiftRater" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/takecian/SwiftRater";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2260A1912C6667D900622BB0 /* SwiftRater */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2260A1902C6667D900622BB0 /* XCRemoteSwiftPackageReference "SwiftRater" */;
+			productName = SwiftRater;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22AA2F2C2C6663CD0045CF08 /* Project object */;
 }
